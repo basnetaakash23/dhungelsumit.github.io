@@ -1,0 +1,113 @@
+	#topBar{
+   position:fixed;
+   top:0;
+ 
+   width:98.5%;
+   height:140px;
+   background-image: url("websiteback.jpg");
+   background-color:tan;
+   
+}
+
+#topnav{
+	position:fixed;
+	background-color: tan;
+	background-image: url("menuback.jpg");
+	top:140px;
+	width: 98.5%;
+}
+#topnav ul
+{
+	list-style: none;
+}
+#topnav li
+{
+	display: inline-block;
+	text-align: center;
+	color: red;
+	
+}
+
+#topnav a:hover
+{
+	background-color: pink;
+	color: white;
+}
+#topnav a:hover li
+{
+	color: white;
+}
+#topnav a:visited 
+{
+	background-color: tomato;
+}
+#topnav a:visited li
+{
+	color: chartreuse;
+}
+#topnav a
+{
+	text-align: center;
+	padding: 15px;
+	height: cover;
+	width: cover;
+	text-decoration: none;
+	font: 23px Arial red;
+}
+
+#img
+{
+	height: 300px;
+	width: 250px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	
+}
+#img img
+{
+
+	height: 100%;
+	width: 100%;
+	
+}
+#informa
+{
+	position:sticky;	
+	height: fill;
+	width: fill;
+	text-align: center;
+	font: 20px bold arial;
+	
+}
+#informa h2
+{
+	font-family: forte;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+.parallax {
+	
+
+    background-image: url("usa2.jpg");
+    /* Set a specific height */
+	min-height:600px;
+        /* Create the parallax scrolling effect */
+
+    top: 400px;
+    background-size: 100%;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+        }
+
+.parallax h1
+{
+	text-align: center;
+	font: 70px bold;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: yellow;
+	padding: 30%;
+}
+
+
+         
