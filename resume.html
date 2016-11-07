@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Resume</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet" />
+    <style type="text/css">a,h1,h2,h3,h4,h5,h6,li,p{font-family:Raleway,sans-serif}.resume{background-color:#1f1f1f;min-height:100vh}.resume .main{height:100%;width:700px;background-color:#fff;padding:0 25px;margin:0 auto}.resume .main .header{border-bottom:2px solid #ddd}.resume .main .header .page-title-container{margin:0 auto;text-align:center;padding-bottom:10px}.resume .main .header .page-title{font-size:48pt;display:inline}.resume .main .header .page-title-first{font-weight:400}.resume .main .header .page-title-last{font-weight:200}.resume .main .header .header-icons{text-align:center}.resume .main .header .header-icons .page-subhead{margin:1rem 15px;display:inline}.resume .main .header .fa{padding-right:10px}.resume .main .indented{padding-left:40px}.resume .main .category-row{padding-bottom:2px}.resume .main .category-row .category{margin-right:10px;padding-left:5px;padding-right:10px;border-bottom:1px solid #ddd;border-right:1px solid #ddd}.resume .main .category-row .category-row-title{margin:.4rem 0}.resume .main .category-row .category-subtitle,.resume .main .category-row .category-title{display:inline;margin-top:10px;margin-bottom:5px}.resume .main .category-row .category-bullets{margin-top:5px}.resume .main .category-row li,.resume .main .category-row p{font-size:smaller}category:last-of-type category-item:last-of-type .category,sidebar-category:last-of-type .category{border-bottom:0!important;padding-bottom:0!important;margin-bottom:0!important}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script><!-- <script src="resume.js"></script> --><script>"use strict";angular.module("Resume",["ngMaterial"]).directive("resume",function(){return{restrict:"E",transclude:!0,template:'<div class="resume">\n      <section class="main" ng-transclude></section>\n    </div>'}}).directive("resumeHeading",function(){return{restrict:"E",scope:{firstName:"@",lastName:"@",website:"@",phone:"@",email:"@",github:"@",linkedin:"@"},template:'<div class="header">\n      <div class="page-title-container">\n        <h1 class="page-title page-title-first">{{firstName}}</h1>\n        <h1 class="page-title page-title-last">{{lastName}}</h1>\n      </div>\n      <div class="header-icons">\n        <span ng-if="website" class="md-subhead page-subhead"><i class="fa fa-lg fa-code"></i>{{website}}</span>\n        <span ng-if="phone" class="md-subhead page-subhead"><i class="fa fa-lg fa-phone"></i>{{phone}}</span>\n        <span ng-if="email" class="md-subhead page-subhead"><i class="fa fa-lg fa-envelope"></i>{{email}}</span>\n        <span ng-if="github" class="md-subhead page-subhead"><i class="fa fa-lg fa-github"></i>{{github}}</span>\n        <span ng-if="linkedin" class="md-subhead page-subhead"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</span>\n      </div>\n    </div>'}}).directive("resumeBody",function(){return{restrict:"E",transclude:!0,template:'<div layout="row" ng-transclude></div>'}}).directive("resumeColumn",function(){return{restrict:"E",transclude:!0,template:"<div ng-transclude></div>"}}).directive("sidebarCategory",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <div class="category">\n        <h5 class="category-row-title">{{name}}</h5>\n        <ng-transclude></ng-transclude>\n      </div>\n    </div>'}}).directive("category",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <h4 class="category-row-title">{{name}}</h4>\n      <ng-transclude></ng-transclude>\n    </div>'}}).directive("categoryItem",function(){return{restrict:"E",scope:{title:"@",subtitle:"@"},transclude:!0,template:'<div class="category">\n        <h5 class="category-title md-body-2">{{title}}</h5>&nbsp;\n        <h5 class="category-subtitle md-caption">{{subtitle}}</h5>\n        <ul class="category-bullets" ng-transclude></ul>\n    </div>'}});</script>
+</head>
+<body ng-app="Resume" ng-cloak=""><resume> <resume-heading email="dhungelsumit2014@gmail.com" first-name="Sumit" github="dhungelsumit" last-name="Dhungel" phone="402-213-8990"> </resume-heading> <resume-body> <resume-column flex="20"> <sidebar-category name="Education">
+<p>Howard University</p>
+
+<p>Graduating May 2019</p>
+
+<p>Computer Engineering</p>
+
+<p>GPA - 3.94</p>
+<br>
+</sidebar-category> <sidebar-category name="Coursework">
+<p>Unix Lab</p>
+
+<p>Discrete Math</p>
+
+<p>Linear Algebra</p>
+
+<p>Calculus I &amp; II</p>
+
+<p>Mobile App Development</p>
+
+<p>Computer Organization I</p>
+
+<p>Computer Science I &amp; II</p>
+<br>
+<p></p>
+</sidebar-category> <sidebar-category name="Achievements">
+<p>Legacy Scholarship totalling to $100,432</p>
+
+<p>Top 10 in Intro to Engineering Design Project 2015</p>
+<br>
+</sidebar-category> <sidebar-category name="Clubs">
+<p>HU Cybersecurity Club</p>
+
+<p>HU Maths Club</p>
+
+<p>NSBE</p>
+
+<p>ACM</p>
+</sidebar-category> </resume-column> 
+<resume-column flex="80"> <category name="Work and Volunteer Experience"> <category-item subtitle="Sodexo, Howard University (From September 2016)" title="Tech Team">
+<li>One of the three members of the Tech Team of HU Dining Services</li>
+<li>Perform trobleshooting of various software issues such as overloading of cash register database and errors regarding readability of Bison One Card</li>
+<li>Fixing the network outage problems in Halo, Software used by cash registers</li>
+
+</category-item> <category-item subtitle="Mahendra Public School, Nepal (Spring 2014 &amp; Summer 2016)" title="Volunteer Teacher">
+<li>Taught Mathematics and Computer Science to underprivilaged High Schoolers</li>
+<li>Majority of my students passed national level examination with good result</li>
+</category-item>  </category> <category name="Projects"> <category-item subtitle="Google DC Hackathon 2016" title="Electrobar">
+<li>Used Twitter API to retrieve data related to the election</li>
+<li>Analyzed the sentiment of the tweets and visualized the data using d3.js</li>
+</category-item> <category-item subtitle="MIDAS Mission Public Health Hackathon 2016 (4th Place)" title="No More Difficulty">
+<li>Featured on Intel</li>
+<li>Used serial processing for mining US Census data</li>
+<li>Visualized statewise percentage of the population suffering from visual, cognitive, hearing and ambulatory difficulties</li>
+</category-item> <category-item subtitle="Intro to Engineering Design Project 2015 (Top 10)" title="The Magic Stick">
+<li>Created a prototype of walking stick for visually impaired people</li>
+<li>Ability to control traffic lights making it easier for them to cross the road</li>
+</category-item> <category-item subtitle="Google DC Hackathon 2015" title="Photo for a Cause">
+<li>Used an image recognition API to self-generate Twitter hashtags and to tweet a picture simultaneously using Python, Django and Twitter API</li>
+<li>Our main aim was to upload the picture enough times to create a trend and let the authorities know about the injustice</li>
+</category-item> </category> <category name="Skills"> <category-item title="Computer Skills">
+<li><strong>Programming Language </strong> Python (1 year), C++ (8 months), HTML (6 months), CSS(4 months), C(4 months), FORTRAN (4 months) </li>
+<li><strong>Web Frameworks </strong>Django, D3js</li>
+<li><strong>Software </strong> Adobe Photoshop, Adobe Dreamweaver, Movie Maker</li>
+<li><strong>Other Computer Skills </strong> Database Management (MS Access),  UNIX, Version Control: Git</li>
+</category-item> <category-item title="Other Courses">
+<li>Intro to Computer Science(Taught by Google Engineer), Intro to Engineering, Reflective Writing Portfolio, Physics, Chemistry, Intro to Political Science</li>
+<li>Introduction to Cloud Computing by IEEE <strong>(edX.org)</strong></li>
+<li>Currently taking Standford University course, Algorithms: Design and Analysis, Part 1 <b>Coursera</b></strong></li>
+</category-item> </category> </resume-column> </resume-body> </resume>
+<p></p>
+
+<p></p>
+
+<p></p>
+</body>
+</html>
