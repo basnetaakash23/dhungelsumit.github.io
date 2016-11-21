@@ -885,33 +885,18 @@ nav#menu #menu-nav li a:hover {
    Contact Section
 ================================================== */
 
-.contact-details h3 {
-	color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 30px;
-	line-height: 1em;
-    text-transform: uppercase;
-}
-
-.contact-details ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;	
-}
-
-.contact-details ul li {
-	margin: 0 0 20px;
-	line-height: 28px;
-	padding: 0;	
-}
 
 #contact-form {
 	margin-bottom: 0;	
+	width: 1100px;
+
+
 }
 
 #contact-form p {
 	margin-bottom: 1px;	
+	margin-left: 70px;
+	margin-right: 0px
 }
 
 #contact-form input,
@@ -925,8 +910,8 @@ nav#menu #menu-nav li a:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	
-	background: #26292E;
-    color: #FFFFFF;
+	background: #2f3238;
+    color: #FFFFFF  ;
     font-size: 16px;
     height: auto;
     padding: 15px;
@@ -952,7 +937,7 @@ nav#menu #menu-nav li a:hover {
 
 #contact-form .submit {
     background: #3C3F45;
-    color: #23262C;
+    color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
