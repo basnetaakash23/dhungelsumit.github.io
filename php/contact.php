@@ -17,7 +17,7 @@ class Contact_Form{
 		
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
-		$this->subject = 'Email from website'; // Subject 
+		$this->subject = 'Contact from Your Website'; // Subject 
 		$this->message = stripslashes($details['message']);
 	
 		$this->email_admin = $email_admin;
