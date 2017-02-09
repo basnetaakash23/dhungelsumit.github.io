@@ -195,7 +195,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "php/contact.php",
+			url: "https://dhungelsumit.herokuapp.com/",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
